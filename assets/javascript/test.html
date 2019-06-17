@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="rightanswer">
+        <a href="#">a;dlfkaflk</a>
+    </div>
+    <div id="points"></div>
+
+
+    <script>
+        var score = 0;
+        $(document).ready(function () {
+
+            $(".rightAnswer").on("click", score++);
+            $("#points").text(score);
+            $(score).append(score++);
+
+
+
+
+
+        })
+    </script>
+
+</body>
+
+</html>
