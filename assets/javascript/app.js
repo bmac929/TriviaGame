@@ -7,7 +7,7 @@ $(document).ready(function () {
     }
     var answerRight = 0;
     var answerWrong = 0;
-    var timer = 10;
+    var timer = 20;
     $("#score").text("Answers Right: " + answerRight + " Answers Wrong: " + answerWrong);
     $(".rightAnswer").on("click", addScore);
     // $(".rightAnswer").on("click", function () {
@@ -37,7 +37,7 @@ $(document).ready(function () {
     }
 
     function reset() {
-        timer = 10
+        timer = 20
         welcome();
         answerRight = 0;
         answerWrong = 0;
