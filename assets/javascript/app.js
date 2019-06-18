@@ -7,7 +7,7 @@ $(document).ready(function () {
     }
     var answerRight = 0;
     var answerWrong = 0;
-    var timer = 20;
+    var timer = 25;
     $("#score").text("Answers Right: " + answerRight + " Answers Wrong: " + answerWrong);
     $(".rightAnswer").on("click", addScore);
     // $(".rightAnswer").on("click", function () {
@@ -30,14 +30,14 @@ $(document).ready(function () {
 
     function endGame() {
 
-        alert("Your time is up! Answers Right: " + answerRight + ". Answers Wrong: " + answerWrong);
+        alert("Your time is up! Answers Right: " + answerRight + " Answers Wrong: " + answerWrong);
 
 
         reset();
     }
 
     function reset() {
-        timer = 20
+        timer = 25
         welcome();
         answerRight = 0;
         answerWrong = 0;
@@ -54,6 +54,7 @@ $(document).ready(function () {
 
     function hide1() {
         $(".1").hide();
+
 
     }
     function hide2() {
